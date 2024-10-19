@@ -1,0 +1,78 @@
+
+
+h2 {
+    color: purple;
+}
+
+body {
+    background-color: #bdc3c7;
+}
+
+h1{
+    color: #9b59b6;
+}
+
+h2{
+    color: orange; /* I notice the last rule excuted*/
+} 
+
+li{
+    color: blue;
+}
+
+p{
+    color: yellow;
+}
+
+input {
+    border: solid 3px yellow;
+}
+
+.hello {
+    background-color: pink;
+}
+
+#special{
+    border: solid 2px ;
+}
+
+div p {
+    font-size: 25px;
+}
+
+input[type="text"] {
+    background-color: gray;
+}
+
+div:nth-of-type(3) p {
+    background-color: pink;
+}
+
+div:nth-of-type(3) p:nth-last-of-type(2) {
+    border: solid 5px ;
+}
+
+div:nth-last-of-type(3) em{
+    color: white;
+    font-size: 20px;
+}
+
+input[type="checkbox"]:checked {
+    margin-left: 50px;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+#special::first-letter {
+    color: green;
+    font-size: 100px;
+}
+
+h1:hover {
+    color: aqua;
+}
+a:visited {
+    color: grey;
+}
