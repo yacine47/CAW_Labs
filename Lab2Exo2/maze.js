@@ -15,6 +15,9 @@ var status  = document.getElementById("status")
 
 
 
+
+
+
     let active = false;
 
 startButton.addEventListener('mouseenter', () => {
