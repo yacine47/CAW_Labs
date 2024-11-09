@@ -1,11 +1,20 @@
+// exo4.js
+const fs = require('fs');
 
+const filename = process.argv[2];
+const text = process.argv[3];
 
-
-var fs = require('fs');
-
-const message = process.argv[2];
-
-fs.appendFile('f.txt', message, function (err) {
-  if (err) throw err;
-  console.log('Saved!');
-}); 
+fs.writeFile(filename, text, (err) => {
+  if (err) {
+    console.error("An error occurred while saving the file.");
+    return;
+  }
+  console.log("The file has been saved!");
+  fs.readFile(filename, 'utf8', (err, data) => {
+    if (err) {
+      console.error("An error occurred while reading the file.");
+      return;
+    }
+    console.log(data);
+  });
+});

@@ -10,4 +10,6 @@ function mean(arr){
 }
 
 
+module.exports = mean;
+
 console.log(mean([1,2,50,162]));
