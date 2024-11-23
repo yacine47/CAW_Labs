@@ -24,12 +24,14 @@ function DynamicDivs() {
             value={height}
             onChange={(e) => setHeight(e.target.value)}
           />
+
           <input
             type="text"
             placeholder="Width"
             value={width}
             onChange={(e) => setWidth(e.target.value)}
           />
+          
           <input
             type="text"
             placeholder="Color"
