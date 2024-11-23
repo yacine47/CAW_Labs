@@ -18,10 +18,8 @@ const obj = {
       b: 2
     }
   };
-  
   const { a, b } = obj.numbers;
-
-
+  
 // question 4
 
 const add = (a =10,b =10)=>  a+b;
